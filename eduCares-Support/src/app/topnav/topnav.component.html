@@ -1,0 +1,73 @@
+<!-- <body>
+    <mat-card class="example-card">
+        <mat-card-header>
+            <a class="img-fluid" href="home">
+                <img class="logo img-fluid" src="..\assets\logo\Original.png" />
+            </a>
+            <a href="home">
+                <h1>
+                    eduCares Support Portal
+                </h1>
+            </a>
+        </mat-card-header>
+
+        <div class="topnav">
+            <button [routerLink]="['/home']" mat-button routerLinkActive="active">Home</button>
+            <button [routerLink]="['/solutions']" mat-button routerLinkActive="active">Solutions</button>
+            <button mat-button>FAQs</button>
+            <button mat-button>Tickets</button>
+            <button mat-button>My Account</button>
+        </div>
+    </mat-card>
+</body> -->
+
+
+<body>
+    <mat-card class="example-card">
+        <mat-card-header>
+            <a class="img-fluid" style="border-top: 0px;" href="home">
+                <img class="logo img-fluid" src="..\assets\logo\Original.png" />
+            </a>
+            <a href="home" style="border-top: 0px;">
+                <h1>
+                    eduCares Support Portal
+                </h1>
+            </a>
+        </mat-card-header>
+
+        <mat-toolbar>
+            <mat-divider></mat-divider>
+
+            <div fxShow="true" fxHide.lt-md="false">
+                <a class="resp" [routerLink]="['/home']" routerLinkActive="active">Home</a>
+                <a class="resp" [routerLink]="['/solutions']" routerLinkActive="active">Solutions</a>
+                <a class="resp" routerLink="/start-page">FAQs</a>
+                <a class="resp" routerLink="/offer">Tickets</a>
+                <a class="resp" routerLink="/contact">My Account</a>
+            </div>
+
+        </mat-toolbar>
+
+<!-- 
+        <mat-sidenav-container fxFlexFill class="example-container">
+
+            <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
+                <div fxLayout="column">
+                    <a mat-button routerLink="/about-us">About us</a>
+                    <br> <a mat-button routerLink="/prices">Prices</a>
+                    <br> <a mat-button routerLink="/start-page">Start page</a>
+                    <br> <a mat-button routerLink="/offer">Offer</a>
+                    <br> <a mat-button routerLink="/contact">Contact</a>
+                </div>
+            </mat-sidenav>
+        </mat-sidenav-container> -->
+
+        <!-- <div class="topnav">
+            <button mat-button>Home</button>
+            <button mat-button>Solutions</button>
+            <button mat-button>FAQs</button>
+            <button mat-button>Tickets</button>
+            <button mat-button>My Account</button>
+        </div> -->
+    </mat-card>
+</body>

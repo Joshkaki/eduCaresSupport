@@ -1,0 +1,79 @@
+.example-card {
+    max-width: 90%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mat-card {
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+    display: block;
+    position: relative;
+    padding: 16px;
+    border-radius: 1;
+    background: lightgray;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14);
+}
+
+.mat-divider {
+    display: block;
+    margin: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #363434;
+}
+
+.mat-card .mat-divider-horizontal {
+    position: absolute;
+    left: 11px;
+    width: 98%;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .example-form {
+        width: 100;
+        margin-left: 0%;
+        margin-top: 0px;
+    }
+    .right {
+        font-size: 11px;
+        font-weight: 300;
+        margin-left: -205px;
+        margin-top: 40px;
+    }
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 10px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    height: 44px;
+    margin-top: 10px;
+}
+
+.mat-toolbar {
+    background: lightgray;
+    color: rgba(0, 0, 0, .87);
+}
+
+.foot {
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.right {
+    font-size: 11px;
+    font-weight: 300;
+    margin-left: 85px;
+}

@@ -1,0 +1,81 @@
+<mat-card class="example-card">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-lg-8">
+
+                <h2>
+                    About custom payment gateways
+                </h2>
+
+                <p>
+                    A Payment Gateway is a service that can be integrated with Educares to handle online fee payments.
+                    After an institution configures the payment gateway, their Educares users can perform secure online
+                    fee payments using payment methods such as, credit cards, debit cards, net banking, and so on. These
+                    online transactions with Educares are handled securely through encrypted channels.
+                </p>
+                <p>
+                    To configure a custom payment gateway, you will need the configuration parameters from the payment
+                    gateway provider you have chosen. These parameters must be entered in Educares and will be used to
+                    map to that particular gateway provider. Though configuration parameters slightly differ for each
+                    gateway provider, parameters of most gateway providers can be commonly grouped based on the
+                    following parameter types:
+                </p>
+                <ul class="parahone">
+                    <li> <b>Configuration Fields</b> – Configuration parameters will remain constant for all
+                        transactions for a merchant through a particular gateway. These parameters must be created in name-value pairs in
+                        the custom gateway creation page. It includes the merchant credentials such as merchant ID,
+                        transaction password, currency etc., which is sent to the gateway to authenticate the merchant
+                        for a transaction. Along with these parameters, the parameter ‘target_url’ must also be created. This
+                        parameter specifies the URL to which the payment form will be sent.
+                        Mandatory configuration parameter: ‘target_url’
+                    <li><b> Variable Fields</b> – Variable parameters will vary for each transaction. Example of
+                        variable
+                        parameters are, amount, redirect URL, item name etc. Variable parameters must be created in
+                        name-parameter_type pairs in the custom gateway creation page. Parameter types are predefined in
+                        Educares and must be specified. Only one parameter name is allowed for each parameter type.
+                        Mandatory variable parameter: ‘Amount’, ‘Redirect URL’
+                    <li><b> Response Parameters </b>– As the name indicates, response parameters are the responses that
+                        will be
+                        sent by the gateway to the user after a transaction is processed. Just like variable fields,
+                        response parameters must also be created in name-parameter_type pairs.
+                        Mandatory response parameters: ‘Amount’, ‘Success Code’, ‘Transaction Status’, ‘Transaction
+                        Reference’
+
+                </ul>
+                <p>
+                    <b>Payment Processor:</b> Except for PayPal, the other six payment gateways that Educares supports
+                    requires
+                    a payment processor to process debit/credit card information and execute the online transaction. For
+                    this purpose, Educares uses its own 'Payment Processor'. If integrating a payment gateway—other than
+                    the
+                    seven that Educares supports—that requires a payment processor, you will have to use your own
+                    payment processor or source it from a third party.
+                </p>
+            </div>
+
+            <div class="span6 vert">
+                <div class="mycontent-left">
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-lg-4">
+                <p class="h2side">
+                    Similar Solutions:
+                </p>
+                <div class="qside">
+                    <p>
+                        <a href="add-on/onlinepay/onlinepay-1"> About Online Payment</a>
+                    </p>
+                    <p class="qsidetop">
+                        <a href="add-on/onlinepay/onlinepay-2">About custom payment gateways </a>
+                    </p>
+                    <p class="qsidetop">
+                        <a href="add-on/onlinepay/onlinepay-3"> Who can configure custom payment gateways?</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</mat-card>

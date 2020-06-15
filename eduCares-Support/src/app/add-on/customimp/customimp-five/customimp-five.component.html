@@ -1,0 +1,100 @@
+<mat-card class="example-card">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-lg-8">
+
+                <h2>
+                    How to import data from a csv file to eduCares?
+                </h2>
+                <p>
+                    The custom import module allows you to add data by bulk into eduCares using a comma separated value
+                    (CSV) file. The CSV file can be edited using an editor like the free for download Libre Office Calc
+                    part of the Libre Office Suite (download it <a style="color: blue;"
+                        href="https://www.libreoffice.org/download/download/">here</a>).
+                </p>
+                <ul class="parahone">
+                    <li>
+                        The first step to import data is to create a custom export structure file. To do that go to your
+                        eduCares instance and click on the <b>Menu > Data and Reports > Custom Imports.</b> Next create
+                        a new
+                        custom import by clicking on <b>New</b> in the Inner Tab menu.
+                    <li> In the create page select the model you want to import data and click on Additional Detail if
+                        you wish to include additional details of the selected model. Refer to the screen shot below.
+                        <img src="..\..\assets\Add-On\Custom Import\5.1.png" alt="5.1">
+                    <li> After the csv has been saved you will find it in the list of custom imports created. Click on
+                        <b>Export CSV</b>to download the csv file for this export. <b>Imports</b> is used to import new
+                        file into eduCares.
+                        <b>Delete deletes</b> the particular export and <b>Imports</b> lists all the imports done for
+                        this particular export.
+                        <img src="..\..\assets\Add-On\Custom Import\5.2.png" alt="5.2">
+                    <li> Click on <b>Export</b> CSV to export a new CSV file. Open this file in an editor like Libre
+                        Office
+                        Calc as shown below. <b>Ensure that the delimiter is Comma and Character set is Unicode
+                            (UTF-8)</b>
+                        <img src="..\..\assets\Add-On\Custom Import\5.3.png" alt="5.3">
+                    <li> Enter your data as per the format specified in the manual and save it. The maximum limit for
+                        one time upload is 200 records.
+                    <li> Then click on imports and then New to create a new import. Upload the file and then refresh the
+                        page to see the status of the background job. On completion the imports page will list the
+                        status of
+                        the import. If it fails due to some error with the file format or csv format then
+                        <b>"Failed"</b> Error
+                        message will be shown. If some data failed to upload due to formatting error or a mandatory
+                        field being
+                        blank then<b> "Complete with Errors"</b> message is shown. If the import is successful a<b>
+                            "Success"</b> message
+                        will be shown.
+                    <li> To import more data for the same model click on imports and select New. There is no need to
+                        create a new export record.
+                </ul>
+
+                <p>
+                    <b>eduCares Pro Tip:</b> When trying uploads for the first time use a couple of sample records to
+                    upload
+                    data so that you avoid mistakes in the data.
+                </p>
+
+            </div>
+
+            <div class="span6 vert">
+                <div class="mycontent-left">
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-lg-4">
+                <p class="h2side">
+                    Similar Solutions:
+                </p>
+                <div class="qside">
+                    <p>
+                        <a href="add-on/customimp/customimp-1"> About Custom import</a>
+                    </p>
+                    <p class="qsidetop">
+                        <a href="add-on/customimp/customimp-2"> Custom import mandatory fields </a>
+                    </p>
+                    <p class="qsidetop">
+                        <a href="add-on/customimp/customimp-3"> How can I perform custom import? </a>
+                    </p>
+                    <p class="qsidetop">
+                        <a href="add-on/customimp/customimp-4"> How bulk edit is useful in custom import? </a>
+                    </p>
+                    <p class="qsidetop">
+                        <a href="add-on/customimp/customimp-5"> How to import data from a csv file to eduCares ? </a>
+                    </p>
+                    <p class="qsidetop">
+                        <a href="add-on/customimp/customimp-6"> How can I view the custom import logs? </a>
+                    </p>
+                    <p class="qsidetop">
+                        <a href="add-on/customimp/customimp-7"> How can I delete an export in custom import?
+                        </a>
+                    </p>
+                    <p class="qsidetop">
+                        <a href="add-on/customimp/customimp-8"> eduCares User Guide for Custom Import </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</mat-card>

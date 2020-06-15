@@ -1,0 +1,366 @@
+<mat-card class="example-card">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-lg-8">
+
+                <h2>
+                    Custom import mandatory fields
+                </h2>
+                <p>
+                    For a successful custom import, the data in your custom import file must be formatted correctly and
+                    must match data in EduCares when necessary. </p>
+                <p>
+                    The following tables lists all mandatory fields for each data type.
+                </p>
+
+                <p> <b> Employee admission details: </b> </p>
+                <table>
+                    <tr>
+                        <th>Mandatory Fields</th>
+                        <th>Data Format Description</th>
+                        <th> Example and Instructions</th>
+                    </tr>
+                    <tr>
+                        <td>*Employee Category Name</td>
+                        <td>An active employee category. </td>
+                        <td>System admin etc.</td>
+                    </tr>
+                    <tr>
+                        <td>*Employee number</td>
+                        <td>Alphanumeric, underscore, hyphen and back slash (/). </td>
+                        <td>AYS/2018/S001</td>
+                    </tr>
+                    <tr>
+                        <td>*Joining date</td>
+                        <td>mm/dd/yyyy or dd-mm-yyyy</td>
+                        <td>03/13/2016 or 13-03-2016</td>
+                    </tr>
+                    <tr>
+                        <td>*First name</td>
+                        <td>Alphanumeric </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>*Gender</td>
+                        <td>m or f </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>*Employee Position Name</td>
+                        <td>An active employee position. </td>
+                        <td>System admin etc.</td>
+                    </tr>
+                    <tr>
+                        <td>*Employee Department Name</td>
+                        <td>An active employee department. </td>
+                        <td>System admin etc.</td>
+                    </tr>
+                    <tr>
+                        <td>*Date of birth</td>
+                        <td>mm/dd/yyyy or dd-mm-yyyy</td>
+                        <td>mm/dd/yyyy or dd-mm-yyyy</td>
+                    </tr>
+                    <tr>
+                        <td>*Nationality Name</td>
+                        <td>Country Name. </td>
+                        <td>eg. For an employee from India, enter nationality as India.</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile phone</td>
+                        <td>Numeric. </td>
+                        <td>9876543210</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>Valid email address. </td>
+                        <td>you@example.com</td>
+                    </tr>
+                </table>
+
+                <p> <b> Student admission details: </b> </p>
+                <table>
+                    <tr>
+                        <th>Mandatory Fields</th>
+                        <th>Data Format Description</th>
+                        <th> Example and Instructions</th>
+                    </tr>
+                    <tr>
+                        <td>*Admission no</td>
+                        <td>Alphanumeric, underscore, hyphen and back slash (/).</td>
+                        <td>AYS/2018/S001.</td>
+                    </tr>
+                    <tr>
+                        <td>*Admission date</td>
+                        <td>mm/dd/yyyy or dd-mm-yyyy </td>
+                        <td>03/13/2016 or 13-03-2016</td>
+                    </tr>
+                    <tr>
+                        <td>*First name</td>
+                        <td>Alphanumeric </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>*Gender</td>
+                        <td>m or f </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>*Batch Name</td>
+                        <td>Course code - Batch name </td>
+                        <td>For a course ‘Grade 1’ having course code ‘G1' and a batch named '2018 A’ batch name is G1 -
+                            2018 A</td>
+                    </tr>
+                    <tr>
+                        <td>*Nationality Name</td>
+                        <td>Country Name. </td>
+                        <td>eg. For an employee from India, enter nationality as India.</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>Valid email address. </td>
+                        <td>This field is mandatory only if moodle is enabled.</td>
+                    </tr>
+                </table>
+
+                <p> <b> Student guardian details: </b> </p>
+                <table>
+                    <tr>
+                        <th>Mandatory Fields</th>
+                        <th>Data Format Description</th>
+                        <th> Example and Instructions</th>
+                    </tr>
+                    <tr>
+                        <td>*First name</td>
+                        <td>Alphanumeric.</td>
+                        <td>This column cannot be modified during bulk edit.</td>
+                    </tr>
+                    <tr>
+                        <td>Is Father</td>
+                        <td>Y or Leave Blank. </td>
+                        <td>If guardian is father, enter Y, leave blank otherwise. This column cannot be modified during
+                            bulk edit.</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>Valid email address. </td>
+                        <td>This field is mandatory only if moodle is enabled.</td>
+                    </tr>
+                    <tr>
+                        <td>Set immediate contact</td>
+                        <td>Alphanumeric, underscore, hyphen and back slash (/). </td>
+                        <td>Enter admission number of the student to be made immediate contact. eg:-AYS/2018/S001</td>
+                    </tr>
+                </table>
+
+                <p> <b> Student attendance details: </b> </p>
+                <table>
+                    <tr>
+                        <th>Mandatory Fields</th>
+                        <th>Data Format Description</th>
+                        <th> Example and Instructions</th>
+                    </tr>
+                    <tr>
+                        <td>*Student Admission Number</td>
+                        <td>Alphanumeric, underscore, hyphen and back slash(/).</td>
+                        <td>AYS/2018/S001.</td>
+                    </tr>
+                    <tr>
+                        <td>*Month date</td>
+                        <td>mm/dd/yyyy or dd-mm-yyyy </td>
+                        <td>03/13/2016 or 13-03-2016.</td>
+                    </tr>
+                    <tr>
+                        <td>*Batch Name</td>
+                        <td>Course code - Batch name </td>
+                        <td>For a course ‘Grade 1’ having course code ‘G1' and a batch named '2018 A’ batch name is G1 -
+                            2018 A.</td>
+                    </tr>
+                    <tr>
+                        <td>*Attendance Status Code</td>
+                        <td>Enter attendance status code.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Attendance Save</td>
+                        <td>Y or leave blank</td>
+                        <td> Enter ‘Y’ to save, leave blank otherwise. The attendance will be saved.</td>
+                    </tr>
+                </table>
+
+                <p> <b> Student exam scores: </b> </p>
+                <table>
+                    <tr>
+                        <th>Mandatory Fields</th>
+                        <th>Data Format Description</th>
+                        <th> Example and Instructions</th>
+                    </tr>
+                    <tr>
+                        <td>*Exam group name</td>
+                        <td>Alphanumeric.</td>
+                        <td>Name of the exam which is created for the batch.</td>
+                    </tr>
+                    <tr>
+                        <td>*Batch name</td>
+                        <td>Course code - Batch name </td>
+                        <td>For a course ‘Grade 1’ having course code ‘G1' and a batch named '2018 A’ batch name is G1 -
+                            2018 A.</td>
+                    </tr>
+                    <tr>
+                        <td>*Subject code</td>
+                        <td>Alphanumeric </td>
+                        <td>subject code of the subject which we want to enter the score.</td>
+                    </tr>
+                    <tr>
+                        <td>*Student Admission Number</td>
+                        <td>Alphanumeric, underscore, hyphen and back slash (/).</td>
+                        <td>AYS/2018/S001.</td>
+                    </tr>
+                    <tr>
+                        <td>Marks</td>
+                        <td>Enter the marks of the subject as decimal.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Grading Level Name</td>
+                        <td>Alphanumeric.</td>
+                        <td>Enter grade value for Grade type exams. It will be auto generated for mark and grade exams.
+                        </td>
+                    </tr>
+                </table>
+
+                <p> <b> Library book details: </b> </p>
+                <table>
+                    <tr>
+                        <th>Mandatory Fields</th>
+                        <th>Data Format Description</th>
+                    </tr>
+                    <tr>
+                        <td>*Title</td>
+                        <td>Alphanumeric.</td>
+                    </tr>
+                    <tr>
+                        <td>*Author</td>
+                        <td>Alphanumeric.</td>
+                    </tr>
+                    <tr>
+                        <td>*Book number</td>
+                        <td>Alphanumeric.</td>
+                    </tr>
+                </table>
+
+                <p> <b> Store item details: </b> </p>
+                <table>
+                    <tr>
+                        <th>Mandatory Fields</th>
+                        <th>Data Format Description</th>
+                    </tr>
+                    <tr>
+                        <td>*Item name</td>
+                        <td>Alphanumeric.</td>
+                    </tr>
+                    <tr>
+                        <td>*Quantity</td>
+                        <td>Alphanumeric.</td>
+                    </tr>
+                    <tr>
+                        <td>*Unit price</td>
+                        <td>Alphanumeric.</td>
+                    </tr>
+                    <tr>
+                        <td>*Batch number</td>
+                        <td>Alphanumeric.</td>
+                    </tr>
+                    <tr>
+                        <td>*Store Code</td>
+                        <td>An active Store Code.</td>
+                    </tr>
+                </table>
+
+                <p> <b> Item supplier details: </b> </p>
+                <table>
+                    <tr>
+                        <th>Mandatory Fields</th>
+                        <th>Data Format Description</th>
+                    </tr>
+                    <tr>
+                        <td>*Name</td>
+                        <td>Alphanumeric.</td>
+                    </tr>
+                    <tr>
+                        <td>Contact no</td>
+                        <td>Numeric.</td>
+                    </tr>
+                    <tr>
+                        <td>*Supplier Type Code</td>
+                        <td>An active Supplier Type Code.</td>
+                    </tr>
+                </table>
+
+                <p> <b> Store details: </b> </p>
+                <table>
+                    <tr>
+                        <th>Mandatory Fields</th>
+                        <th>Data Format Description</th>
+                    </tr>
+                    <tr>
+                        <td>*Name</td>
+                        <td>Alphanumeric.</td>
+                    </tr>
+                    <tr>
+                        <td>*Code</td>
+                        <td>Alphanumeric.</td>
+                    </tr>
+                    <tr>
+                        <td>*Store Category Code</td>
+                        <td>An active Store Category Code.</td>
+                    </tr>
+                    <tr>
+                        <td>*Store Type Code</td>
+                        <td>An active Store Type Code.</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="span6 vert">
+                <div class="mycontent-left">
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-lg-4">
+                <p class="h2side">
+                    Similar Solutions:
+                </p>
+                <div class="qside">
+                    <p>
+                        <a href="add-on/customimp/customimp-1"> About Custom import</a>
+                    </p>
+                    <p class="qsidetop">
+                        <a href="add-on/customimp/customimp-2"> Custom import mandatory fields </a>
+                    </p>
+                    <p class="qsidetop">
+                        <a href="add-on/customimp/customimp-3"> How can I perform custom import? </a>
+                    </p>
+                    <p class="qsidetop">
+                        <a href="add-on/customimp/customimp-4"> How bulk edit is useful in custom import? </a>
+                    </p>
+                    <p class="qsidetop">
+                        <a href="add-on/customimp/customimp-5"> How to import data from a csv file to eduCares ? </a>
+                    </p>
+                    <p class="qsidetop">
+                        <a href="add-on/customimp/customimp-6"> How can I view the custom import logs? </a>
+                    </p>
+                    <p class="qsidetop">
+                        <a href="add-on/customimp/customimp-7"> How can I delete an export in custom import?
+                        </a>
+                    </p>
+                    <p class="qsidetop">
+                        <a href="add-on/customimp/customimp-8"> eduCares User Guide for Custom Import </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</mat-card>
